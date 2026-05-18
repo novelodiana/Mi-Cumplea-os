@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#dcdcdc;
+    font-family:'Montserrat', sans-serif;
+    padding:20px;
+}
+
+/* CONTENEDOR */
+
+.invitacion{
+
+    width:768px;
+    height:1152px;
+
+    background-image:url("invitacion delmy.png");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.25);
+}
+
+/* BOTONES */
+
+.botones{
+
+    position:absolute;
+
+    bottom:130px;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+/* BOTÓN GENERAL */
+
+.btn{
+
+    text-decoration:none;
+
+    width:320px;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+    backdrop-filter:blur(5px);
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* BOTÓN UBICACIÓN */
+
+.ubicacion{
+
+    background:#c48d6b; /* café rosita elegante */
+
+    color:white;
+}
+
+/* BOTÓN CONFIRMAR */
+
+.confirmar{
+
+    background:#f1b3ac; /* rosa pastel */
+
+    color:white;
+}
+
+/* EFECTO */
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    opacity:0.9;
+}
+
+/* FRASE FINAL */
+
+.frase{
+
+    position:absolute;
+
+    bottom:45px;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:30px;
+
+    color:#241a12;
+
+    font-family:'Great Vibes', cursive;
+
+    letter-spacing:2px;
+
+    text-shadow:0 2px 6px rgba(0,0,0,0.10);
+}
+
+</style>
+</head>
+<body>
+
+<div class="invitacion">
+
+    <!-- BOTONES -->
+
+    <div class="botones">
+
+        <!-- UBICACIÓN -->
+
+        <a href="https://www.google.com/maps/place/Calle+67+1870,+Nueva+Mulsay+II,+97249+M%C3%A9rida,+Yuc./@20.9598371,-89.6680193,3a,75y,169.66h,90t/data=!3m7!1e1!3m5!1s286U7N9Mbbjlnd7opfXgfQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D286U7N9Mbbjlnd7opfXgfQ%26yaw%3D169.66249!7i16384!8i8192!4m15!1m8!3m7!1s0x8f567305d107bea7:0x7cc3112ff86e0743!2sCalle+67+1870,+Nueva+Mulsay+II,+97249+M%C3%A9rida,+Yuc.!3b1!8m2!3d20.9597936!4d-89.6679255!16s%2Fg%2F11fwj4cq30!3m5!1s0x8f567305d107bea7:0x7cc3112ff86e0743!8m2!3d20.9597936!4d-89.6679255!16s%2Fg%2F11fwj4cq30?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank"
+           class="btn ubicacion">
+
+           📍 Ver Ubicación
+
+        </a>
+
+        <!-- CONFIRMAR -->
+
+        <a href="https://wa.me/9999944512?text=Confirmo%20mi%20asistencia"
+           target="_blank"
+           class="btn confirmar">
+
+           💌 Confirmar Asistencia
+
+        </a>
+
+    </div>
+
+    <!-- FRASE -->
+
+    <div class="frase">
+        4 personas ♡
+    </div>
+
+</div>
+
+</body>
+</html>
